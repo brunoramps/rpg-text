@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RPG Multiplayer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="status-bars">
+        <div id="health-bar">Vida: 100</div>
+        <div id="mana-bar">Mana: 100</div>
+      </div>
+      <div id="message-area"></div>
+      <div id="inventory">
+        <h3>Inventário</h3>
+        <div id="inventory-slots">
+          <p>Item 1</p>
+          <p>Item 2</p>
+        </div>
+      </div>
+      <ul id="players-list"></ul>
+      <div id="input-area">
+        <input
+          type="text"
+          id="command-input"
+          placeholder="Digite um comando..."
+        />
+        <button onclick="sendCommand()">Enviar</button>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

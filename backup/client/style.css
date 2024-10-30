@@ -1,0 +1,44 @@
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+  
+  #status-bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #message-area {
+    border: 1px solid #000;
+    width: 60%;
+    height: 200px;
+    overflow-y: auto;
+    margin: 20px 0;
+  }
+  
+  #inventory {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+  }
+  
+  #players-list {
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+  }
+  
+  #input-area {
+    position: fixed;
+    bottom: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
